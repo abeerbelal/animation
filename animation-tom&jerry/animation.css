@@ -1,0 +1,128 @@
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.parent{
+    display: flex;
+    align-items: flex-end;
+}
+.tom{
+    transform: rotateY(180deg);
+    position: relative;
+    animation-name: tomm;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes tomm{
+    0%{
+        left: 0%;
+        transform: rotateY(180deg); 
+        order: 0;
+    }
+    50%{
+        left: 900px;
+        transform: rotateY(180deg);
+        order: 0;
+    }
+    51%{
+        transform: rotateY(360deg);
+        order: 1;
+    }
+    100%{
+        left: 0px;
+        transform: rotateY(360deg);
+        order: 1;
+    }
+}
+
+.jerry{
+    transform: rotateY(0deg);
+    position: relative;
+    animation-name: jerrym;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jerrym{
+  
+        0%{
+            left: 0%;
+            transform: rotateY(0deg); 
+        }
+        50%{
+            left: 900px;
+            transform: rotateY(0deg);
+        }
+        51%{
+            transform: rotateY(180deg);
+        }
+        100%{
+            left: 0px;
+            transform: rotateY(180deg);
+        }
+}
+/*.taxi{
+    transform: rotateY(180deg);
+    position: relative;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes move{
+    0%{
+        left: 0%;
+        transform: rotateY(180deg); 
+    }
+    50%{
+        left: 900px;
+        transform: rotateY(180deg);
+    }
+    51%{
+        transform: rotateY(360deg);
+    }
+    100%{
+        left: 0px;
+        transform: rotateY(360deg);
+    }
+}*/
+/*.test{
+    width: 100%;
+    height: 100vh;
+    animation-name: first;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    background-size: cover;
+
+}*/
+
+/*@keyframes first{
+    0%{
+        background-image: url("imaeges/1.jpg");
+
+    }
+    30%{
+        background-image: url("imaeges/2.jpg");
+
+    }
+    50%{
+        background-image: url("imaeges/Taxi_picture.webp");
+    }
+    60%{
+        background-image: url("imaeges/3.jpg");
+    }
+    80%{
+        background-image: url("imaeges/png-clipart-tom-and-jerry-tom-and-jerry-removebg-preview.png");
+    }
+    90%{
+        background-image: url("imaeges/Tom_Cat_2.webp");
+    }
+    100%{
+        background-image: url("imaeges/4.jpg");
+    }
+*/
