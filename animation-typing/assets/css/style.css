@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+.text{
+    display: inline-flex;
+}
+.text .web{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+
+}
+.text .dynamic{
+    margin-left: 50px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.dynamic li{
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    color:#fff;
+    top: 0;
+    position: relative;
+    animation: slide 3s steps(2) infinite;
+    
+}
+.dynamic li span{
+    position: relative;
+}
+.dynamic li span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    background: #000;
+    height: 250px;
+    width: 100%;
+    border-left: 3px solid #fff;
+    animation: type 1.5s steps(9) infinite;
+}
+@keyframes type {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+@keyframes slide {
+    100%{
+        top:-180px;
+    }
+}
